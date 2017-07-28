@@ -1,0 +1,90 @@
+
+/* D3 chart */
+
+#outer {
+  border-radius: 5px;
+  color: #000;
+}
+
+#onTimePerfChart {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#onTimePerfChart .arc {
+  stroke-weight: 0.1;
+  stroke-width: 6;
+  fill: #00e800;
+}
+
+.component1 {
+  fill: #0a2b0a;
+}
+
+.component2 {
+  fill: #2A1E0A;
+}
+
+.component3 {
+  fill: #390205;
+}
+
+
+.component1 .label {
+  font-family: Myriad, "Helvetic Neue", Helvetica, Arial;
+  text-anchor: middle;
+  fill: white;
+}
+
+.arc {
+  stroke-weight:0.1;
+  fill: #4e8fff;
+}
+
+
+.arc2 {
+  stroke-weight:0.1;
+  fill: #3660b0;
+}
+
+.arc2 {
+  stroke-weight:0.1;
+  fill: #3660b3;
+}
+
+
+.label {
+  font-family:  Myriad, "Helvetic Neue", Helvetica, Arial;
+  text-anchor: middle;
+}
+
+.labelSmall {
+  font-family:  Myriad, "Helvetic Neue", Helvetica, Arial;
+  text-anchor: middle;
+  font-size: 11px;
+}
+
+.chartHeader {
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  color: white !important;
+}
+
+
+.radial-svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.emoIcon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.emoFont {
+  text-align: center;
+  font-size: 18px !important;
+  color: white !important
+}
+

@@ -1,0 +1,87 @@
+<ion-view>
+  <ion-nav-bar class="bar-dark">
+  </ion-nav-bar>
+
+  <ion-nav-title>
+    WORKFORCE ACTIVITY
+  </ion-nav-title>
+
+  <ion-nav-buttons side="left" style="vertical-align: middle">
+    <a ng-model="annotationButt" data-tool="marker" ng-click="annotationClicked()" ng-class="annotationButt.clicked?'annotationActive':'annotationStatic'"></a>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <a href="#/home">
+      <img src="img/Home-Static.png" style="width:27px;vertical-align: middle">
+    </a>
+  </ion-nav-buttons>
+
+  <ion-content class="main-bg has-header" scroll="false">
+
+    <canvas id="sketchActivity" width="420" height="800" style="display:none; position:absolute; top:0px; left:0px; z-index: 100"></canvas>
+
+    <ul class="activities">
+
+      <li>
+
+      <div class="row row-center" style="padding: 0 !important">
+        <div class="col-50 col-center homeChartGrid">
+          <p class="homeChartTitle"># BAY CHECKS</p>
+
+          <div id="bayChart" class="cexpChartCell"></div>
+        </div>
+        <div class="col-50 col-center homeChartGrid offsetx5">
+          <p class="homeChartTitle"># AUA CHECKS</p>
+
+          <div id="auaChart" class="cexpChartCell">test</div>
+        </div>
+      </div>
+
+      <div class="row row-center" style="padding: 0 !important">
+        <div class="col-50 col-center homeChartGrid">
+          <p class="homeChartTitle"># INFRINGEMENTS</p>
+
+          <div id="infChart" class="cexpChartCell"></div>
+        </div>
+        <div class="col-50 col-center homeChartGrid offsetx5">
+          <p class="homeChartTitle"># LIGHT CHECKS</p>
+
+          <div id="lightChart" class="cexpChartCell"></div>
+        </div>
+      </div>
+
+      <div class="row row-center" style="padding: 0 !important">
+        <div class="col-50 col-center homeChartGrid">
+          <p class="homeChartTitle"># SPILL TREATMENTS</p>
+
+          <div id="spillChart" class="cexpChartCell"></div>
+        </div>
+        <div class="col-50 col-center homeChartGrid offsetx5">
+          <p class="homeChartTitle"># ESCORTS</p>
+
+          <div id="escortChart" class="cexpChartCell"></div>
+        </div>
+      </div>
+
+      </li>
+
+      <li>
+        <div class="row row-center" style="padding: 0 !important">
+          <div class="col-center cexpChartGrid offsetx5">
+            <p class="cexpChartTitle"># ENGINE GROUND RUNNING</p>
+            <div id="engineChart" class="activityChartCell"></div>
+          </div>
+        </div>
+
+        <div class="row row-center" style="padding: 0 !important">
+          <div class="col-center cexpChartGrid offsetx5">
+            <p class="cexpChartTitle"># WILDLIFE OBSERVATIONS, <br>HARRASSMENTS & CULLS</p>
+            <div id="wildlifeChart" class="activityChartCell"></div>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+  </ion-content>
+</ion-view>

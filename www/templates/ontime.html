@@ -1,0 +1,38 @@
+<ion-view cache-view="false" >
+  <ion-nav-bar class="bar-dark">
+  </ion-nav-bar>
+
+  <ion-nav-title>
+    ON TIME PERFORMANCE
+  </ion-nav-title>
+
+  <ion-nav-buttons side="left" style="vertical-align: middle">
+    <a ng-model="annotationButt" data-tool="marker" ng-click="annotationClicked()" ng-class="annotationButt.clicked?'annotationActive':'annotationStatic'"></a>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <a href="#/home">
+      <img src="img/Home-Static.png" style="width:27px;vertical-align: middle">
+    </a>
+  </ion-nav-buttons>
+
+  <ion-content class="main-bg has-header" scroll="false">
+
+    <canvas id="sketchOntime" width="420" height="800" style="display:none; position:absolute; top:0px; left:0px; z-index: 100"></canvas>
+
+    <div class="row row-center" style="padding: 0 !important">
+      <div class="col-center cexpChartGrid">
+        <p class="cexpChartTitle">Runway FOD Inspections On Time</p>
+        <div id="ontimeRunwayChart" class="cexpChartCell"></div>
+      </div>
+    </div>
+
+    <div class="row row-center" style="padding: 0 !important">
+      <div class="col-center cexpChartGrid">
+        <p class="cexpChartTitle">Serviceability Inspection On Time</p>
+        <div id="ontimeServChart" class="cexpChartCell"></div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

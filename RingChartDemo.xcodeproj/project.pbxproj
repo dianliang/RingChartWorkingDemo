@@ -1,0 +1,967 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00F5AF0769BB4DA1B41385AD /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C335893850C14431AA31EA8B /* WatchConnectivity.framework */; };
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		63C4291A1F2898EA00E53714 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C429181F2898EA00E53714 /* Interface.storyboard */; };
+		63C4291C1F2898EA00E53714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C4291B1F2898EA00E53714 /* Assets.xcassets */; };
+		63C429231F2898EA00E53714 /* RingChartDemoWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 63C429221F2898EA00E53714 /* RingChartDemoWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		63C4292B1F2898EA00E53714 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C4292A1F2898EA00E53714 /* InterfaceController.m */; };
+		63C429311F2898EA00E53714 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C429301F2898EA00E53714 /* NotificationController.m */; };
+		63C429331F2898EA00E53714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C429321F2898EA00E53714 /* Assets.xcassets */; };
+		63C429371F2898EA00E53714 /* RingChartDemoWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 63C429161F2898EA00E53714 /* RingChartDemoWatch.app */; };
+		63C429441F289BF300E53714 /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E399E143C0408B8792E229 /* MMWormhole.m */; };
+		63C429581F28B76700E53714 /* MMWormholeCoordinatedFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB9B2FCE0E84E9C97863436 /* MMWormholeCoordinatedFileTransiting.m */; };
+		63C429591F28B76700E53714 /* MMWormholeFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 387EA06E8C744EEA94768A07 /* MMWormholeFileTransiting.m */; };
+		63C4295A1F28B76700E53714 /* MMWormholeSession.h in Sources */ = {isa = PBXBuildFile; fileRef = A94B3FD46C2A44C8B5706874 /* MMWormholeSession.h */; };
+		63C4295B1F28B76700E53714 /* MMWormholeSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1899A3433C4827BE6493FA /* MMWormholeSession.m */; };
+		63C4295C1F28B76700E53714 /* MMWormholeSessionContextTransiting.h in Sources */ = {isa = PBXBuildFile; fileRef = 941F523D97804C35B1C7E824 /* MMWormholeSessionContextTransiting.h */; };
+		63C4295D1F28B76700E53714 /* MMWormholeSessionContextTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0AEBBD753742138BE88E53 /* MMWormholeSessionContextTransiting.m */; };
+		63C4295E1F28B76700E53714 /* MMWormholeSessionFileTransiting.h in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D7CBF4A9343A8AEE0A4E4 /* MMWormholeSessionFileTransiting.h */; };
+		63C4295F1F28B76700E53714 /* MMWormholeSessionFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 545501F67CFE4CF6A07A18C3 /* MMWormholeSessionFileTransiting.m */; };
+		63C429601F28B76700E53714 /* MMWormholeSessionMessageTransiting.h in Sources */ = {isa = PBXBuildFile; fileRef = 861E60740C2C4363844AD5FB /* MMWormholeSessionMessageTransiting.h */; };
+		63C429611F28B76700E53714 /* MMWormholeSessionMessageTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = BED6B15141FE480B8C6BFA3A /* MMWormholeSessionMessageTransiting.m */; };
+		63C429621F28B76700E53714 /* MMWormholeTransiting.h in Sources */ = {isa = PBXBuildFile; fileRef = 7BADB25BE38A4427A88F14F4 /* MMWormholeTransiting.h */; };
+		63C429631F28B76700E53714 /* MMWormholeCoordinatedFileTransiting.h in Sources */ = {isa = PBXBuildFile; fileRef = 218C1C137126482CAF35FC92 /* MMWormholeCoordinatedFileTransiting.h */; };
+		63C429641F28B76700E53714 /* MMWormholeFileTransiting.h in Sources */ = {isa = PBXBuildFile; fileRef = 591B170CA5134C96BEAB510A /* MMWormholeFileTransiting.h */; };
+		63C429661F28B7A300E53714 /* MMWormholeCoordinatedFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB9B2FCE0E84E9C97863436 /* MMWormholeCoordinatedFileTransiting.m */; };
+		63C429671F28B7A300E53714 /* MMWormholeFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 387EA06E8C744EEA94768A07 /* MMWormholeFileTransiting.m */; };
+		63C429681F28B7A300E53714 /* MMWormholeSession.h in Sources */ = {isa = PBXBuildFile; fileRef = A94B3FD46C2A44C8B5706874 /* MMWormholeSession.h */; };
+		63C429691F28B7A300E53714 /* MMWormholeSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1899A3433C4827BE6493FA /* MMWormholeSession.m */; };
+		63C4296A1F28B7A300E53714 /* MMWormholeSessionContextTransiting.h in Sources */ = {isa = PBXBuildFile; fileRef = 941F523D97804C35B1C7E824 /* MMWormholeSessionContextTransiting.h */; };
+		63C4296B1F28B7A300E53714 /* MMWormholeSessionContextTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0AEBBD753742138BE88E53 /* MMWormholeSessionContextTransiting.m */; };
+		63C4296C1F28B7A300E53714 /* MMWormholeSessionFileTransiting.h in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D7CBF4A9343A8AEE0A4E4 /* MMWormholeSessionFileTransiting.h */; };
+		63C4296D1F28B7A300E53714 /* MMWormholeSessionFileTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = 545501F67CFE4CF6A07A18C3 /* MMWormholeSessionFileTransiting.m */; };
+		63C4296E1F28B7A300E53714 /* MMWormholeSessionMessageTransiting.h in Sources */ = {isa = PBXBuildFile; fileRef = 861E60740C2C4363844AD5FB /* MMWormholeSessionMessageTransiting.h */; };
+		63C4296F1F28B7A300E53714 /* MMWormholeSessionMessageTransiting.m in Sources */ = {isa = PBXBuildFile; fileRef = BED6B15141FE480B8C6BFA3A /* MMWormholeSessionMessageTransiting.m */; };
+		63C429701F28B7A300E53714 /* MMWormholeTransiting.h in Sources */ = {isa = PBXBuildFile; fileRef = 7BADB25BE38A4427A88F14F4 /* MMWormholeTransiting.h */; };
+		63C429711F28B7A300E53714 /* MMWormholeCoordinatedFileTransiting.h in Sources */ = {isa = PBXBuildFile; fileRef = 218C1C137126482CAF35FC92 /* MMWormholeCoordinatedFileTransiting.h */; };
+		63C429721F28B7A300E53714 /* MMWormholeFileTransiting.h in Sources */ = {isa = PBXBuildFile; fileRef = 591B170CA5134C96BEAB510A /* MMWormholeFileTransiting.h */; };
+		63C429731F28B81600E53714 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C4292D1F2898EA00E53714 /* ExtensionDelegate.m */; };
+		63C429741F28B95000E53714 /* AppleWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E6B83400EE4D65AC733532 /* AppleWatch.m */; };
+		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
+		80373FDCAC9C4E298BF5C1AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3585E4C5CA4E00B18A0104 /* Foundation.framework */; };
+		854069FD0573457A983F16B0 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A394455D17AC43C786FC68EB /* CDVStatusBar.m */; };
+		92653863EA40463E96BDACE5 /* Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 39745B75000A4A0CA3E190F2 /* Screenshot.m */; };
+		99E83AA6A5EC4FE2A8FE15BF /* MMWormhole.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E399E143C0408B8792E229 /* MMWormhole.m */; };
+		C66973D7D9C045D790CB1575 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = AADBB974B2704C3483BB6B7A /* IonicKeyboard.m */; };
+		F148B92FB93A4E568D1D86F2 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C05DBD2A2748C0AF44F7EA /* CDVLogger.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		63C429111F28981300E53714 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C0C01EB21E3911D50056E6CB;
+			remoteInfo = Cordova;
+		};
+		63C429241F2898EA00E53714 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63C429211F2898EA00E53714;
+			remoteInfo = "RingChartDemoWatch Extension";
+		};
+		63C429351F2898EA00E53714 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63C429151F2898EA00E53714;
+			remoteInfo = RingChartDemoWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		63C4293B1F2898EA00E53714 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				63C429231F2898EA00E53714 /* RingChartDemoWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C4293F1F2898EA00E53714 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				63C429371F2898EA00E53714 /* RingChartDemoWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RingChartDemo/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		0BB9B2FCE0E84E9C97863436 /* MMWormholeCoordinatedFileTransiting.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MMWormholeCoordinatedFileTransiting.m; path = "cordova-plugin-apple-watch/MMWormholeCoordinatedFileTransiting.m"; sourceTree = "<group>"; };
+		1072E326181149EE95E45961 /* AppleWatch.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = AppleWatch.h; path = "cordova-plugin-apple-watch/AppleWatch.h"; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* RingChartDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingChartDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EF59249E5DE4A18BA4AA2EA /* MMWormhole.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MMWormhole.h; path = "cordova-plugin-apple-watch/MMWormhole.h"; sourceTree = "<group>"; };
+		218C1C137126482CAF35FC92 /* MMWormholeCoordinatedFileTransiting.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MMWormholeCoordinatedFileTransiting.h; path = "cordova-plugin-apple-watch/MMWormholeCoordinatedFileTransiting.h"; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E1899A3433C4827BE6493FA /* MMWormholeSession.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSession.m; path = "cordova-plugin-apple-watch/MMWormholeSession.m"; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* RingChartDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RingChartDemo-Prefix.pch"; sourceTree = "<group>"; };
+		387EA06E8C744EEA94768A07 /* MMWormholeFileTransiting.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MMWormholeFileTransiting.m; path = "cordova-plugin-apple-watch/MMWormholeFileTransiting.m"; sourceTree = "<group>"; };
+		39745B75000A4A0CA3E190F2 /* Screenshot.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = Screenshot.m; path = com.darktalker.cordova.screenshot/Screenshot.m; sourceTree = "<group>"; };
+		3F0AEBBD753742138BE88E53 /* MMWormholeSessionContextTransiting.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionContextTransiting.m; path = "cordova-plugin-apple-watch/MMWormholeSessionContextTransiting.m"; sourceTree = "<group>"; };
+		545501F67CFE4CF6A07A18C3 /* MMWormholeSessionFileTransiting.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionFileTransiting.m; path = "cordova-plugin-apple-watch/MMWormholeSessionFileTransiting.m"; sourceTree = "<group>"; };
+		591B170CA5134C96BEAB510A /* MMWormholeFileTransiting.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MMWormholeFileTransiting.h; path = "cordova-plugin-apple-watch/MMWormholeFileTransiting.h"; sourceTree = "<group>"; };
+		59E399E143C0408B8792E229 /* MMWormhole.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MMWormhole.m; path = "cordova-plugin-apple-watch/MMWormhole.m"; sourceTree = "<group>"; };
+		5A1D7CBF4A9343A8AEE0A4E4 /* MMWormholeSessionFileTransiting.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionFileTransiting.h; path = "cordova-plugin-apple-watch/MMWormholeSessionFileTransiting.h"; sourceTree = "<group>"; };
+		63C429131F28981B00E53714 /* RingChartDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = RingChartDemo.entitlements; path = RingChartDemo/RingChartDemo.entitlements; sourceTree = "<group>"; };
+		63C429161F2898EA00E53714 /* RingChartDemoWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingChartDemoWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C429191F2898EA00E53714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		63C4291B1F2898EA00E53714 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63C4291D1F2898EA00E53714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C429221F2898EA00E53714 /* RingChartDemoWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RingChartDemoWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C429281F2898EA00E53714 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		63C429291F2898EA00E53714 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		63C4292A1F2898EA00E53714 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		63C4292C1F2898EA00E53714 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		63C4292D1F2898EA00E53714 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		63C4292F1F2898EA00E53714 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		63C429301F2898EA00E53714 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		63C429321F2898EA00E53714 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63C429341F2898EA00E53714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C429401F28991400E53714 /* RingChartDemoWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RingChartDemoWatch.entitlements; sourceTree = "<group>"; };
+		63C429411F28991C00E53714 /* RingChartDemoWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "RingChartDemoWatch Extension.entitlements"; sourceTree = "<group>"; };
+		68C05DBD2A2748C0AF44F7EA /* CDVLogger.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVLogger.m; path = "cordova-plugin-console/CDVLogger.m"; sourceTree = "<group>"; };
+		6A1674D247EB48C5A9626B74 /* CDVStatusBar.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVStatusBar.h; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; };
+		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = RingChartDemo/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		7BADB25BE38A4427A88F14F4 /* MMWormholeTransiting.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MMWormholeTransiting.h; path = "cordova-plugin-apple-watch/MMWormholeTransiting.h"; sourceTree = "<group>"; };
+		7C3585E4C5CA4E00B18A0104 /* Foundation.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		861E60740C2C4363844AD5FB /* MMWormholeSessionMessageTransiting.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionMessageTransiting.h; path = "cordova-plugin-apple-watch/MMWormholeSessionMessageTransiting.h"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* RingChartDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "RingChartDemo-Info.plist"; path = "RingChartDemo/RingChartDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		941F523D97804C35B1C7E824 /* MMWormholeSessionContextTransiting.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MMWormholeSessionContextTransiting.h; path = "cordova-plugin-apple-watch/MMWormholeSessionContextTransiting.h"; sourceTree = "<group>"; };
+		A394455D17AC43C786FC68EB /* CDVStatusBar.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVStatusBar.m; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; };
+		A94B3FD46C2A44C8B5706874 /* MMWormholeSession.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = MMWormholeSession.h; path = "cordova-plugin-apple-watch/MMWormholeSession.h"; sourceTree = "<group>"; };
+		AADBB974B2704C3483BB6B7A /* IonicKeyboard.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IonicKeyboard.m; path = "ionic-plugin-keyboard/IonicKeyboard.m"; sourceTree = "<group>"; };
+		BED6B15141FE480B8C6BFA3A /* MMWormholeSessionMessageTransiting.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = MMWormholeSessionMessageTransiting.m; path = "cordova-plugin-apple-watch/MMWormholeSessionMessageTransiting.m"; sourceTree = "<group>"; };
+		C335893850C14431AA31EA8B /* WatchConnectivity.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		D1259E3A27EE4D5B8AB4D73D /* IonicKeyboard.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = IonicKeyboard.h; path = "ionic-plugin-keyboard/IonicKeyboard.h"; sourceTree = "<group>"; };
+		E8E6B83400EE4D65AC733532 /* AppleWatch.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = AppleWatch.m; path = "cordova-plugin-apple-watch/AppleWatch.m"; sourceTree = "<group>"; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = RingChartDemo/config.xml; sourceTree = "<group>"; };
+		FAA9D1F6D735405899AC4939 /* CDVLogger.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVLogger.h; path = "cordova-plugin-console/CDVLogger.h"; sourceTree = "<group>"; };
+		FF330A5B1CD543408E5AD9C3 /* Screenshot.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = Screenshot.h; path = com.darktalker.cordova.screenshot/Screenshot.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				80373FDCAC9C4E298BF5C1AF /* Foundation.framework in Frameworks */,
+				00F5AF0769BB4DA1B41385AD /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C4291F1F2898EA00E53714 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = RingChartDemo/Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* RingChartDemo.app */,
+				63C429161F2898EA00E53714 /* RingChartDemoWatch.app */,
+				63C429221F2898EA00E53714 /* RingChartDemoWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				63C429131F28981B00E53714 /* RingChartDemo.entitlements */,
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				63C429171F2898EA00E53714 /* RingChartDemoWatch */,
+				63C429261F2898EA00E53714 /* RingChartDemoWatch Extension */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* RingChartDemo-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			path = RingChartDemo;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* RingChartDemo-Info.plist */,
+				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+			);
+			name = Resources;
+			path = RingChartDemo/Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C3585E4C5CA4E00B18A0104 /* Foundation.framework */,
+				C335893850C14431AA31EA8B /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+				63C429121F28981300E53714 /* Cordova.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				39745B75000A4A0CA3E190F2 /* Screenshot.m */,
+				FF330A5B1CD543408E5AD9C3 /* Screenshot.h */,
+				E8E6B83400EE4D65AC733532 /* AppleWatch.m */,
+				59E399E143C0408B8792E229 /* MMWormhole.m */,
+				0BB9B2FCE0E84E9C97863436 /* MMWormholeCoordinatedFileTransiting.m */,
+				387EA06E8C744EEA94768A07 /* MMWormholeFileTransiting.m */,
+				A94B3FD46C2A44C8B5706874 /* MMWormholeSession.h */,
+				2E1899A3433C4827BE6493FA /* MMWormholeSession.m */,
+				941F523D97804C35B1C7E824 /* MMWormholeSessionContextTransiting.h */,
+				3F0AEBBD753742138BE88E53 /* MMWormholeSessionContextTransiting.m */,
+				5A1D7CBF4A9343A8AEE0A4E4 /* MMWormholeSessionFileTransiting.h */,
+				545501F67CFE4CF6A07A18C3 /* MMWormholeSessionFileTransiting.m */,
+				861E60740C2C4363844AD5FB /* MMWormholeSessionMessageTransiting.h */,
+				BED6B15141FE480B8C6BFA3A /* MMWormholeSessionMessageTransiting.m */,
+				7BADB25BE38A4427A88F14F4 /* MMWormholeTransiting.h */,
+				1072E326181149EE95E45961 /* AppleWatch.h */,
+				1EF59249E5DE4A18BA4AA2EA /* MMWormhole.h */,
+				218C1C137126482CAF35FC92 /* MMWormholeCoordinatedFileTransiting.h */,
+				591B170CA5134C96BEAB510A /* MMWormholeFileTransiting.h */,
+				68C05DBD2A2748C0AF44F7EA /* CDVLogger.m */,
+				FAA9D1F6D735405899AC4939 /* CDVLogger.h */,
+				A394455D17AC43C786FC68EB /* CDVStatusBar.m */,
+				6A1674D247EB48C5A9626B74 /* CDVStatusBar.h */,
+				AADBB974B2704C3483BB6B7A /* IonicKeyboard.m */,
+				D1259E3A27EE4D5B8AB4D73D /* IonicKeyboard.h */,
+			);
+			name = Plugins;
+			path = RingChartDemo/Plugins;
+			sourceTree = SOURCE_ROOT;
+		};
+		63C429171F2898EA00E53714 /* RingChartDemoWatch */ = {
+			isa = PBXGroup;
+			children = (
+				63C429401F28991400E53714 /* RingChartDemoWatch.entitlements */,
+				63C429181F2898EA00E53714 /* Interface.storyboard */,
+				63C4291B1F2898EA00E53714 /* Assets.xcassets */,
+				63C4291D1F2898EA00E53714 /* Info.plist */,
+			);
+			path = RingChartDemoWatch;
+			sourceTree = "<group>";
+		};
+		63C429261F2898EA00E53714 /* RingChartDemoWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				63C429411F28991C00E53714 /* RingChartDemoWatch Extension.entitlements */,
+				63C429291F2898EA00E53714 /* InterfaceController.h */,
+				63C4292A1F2898EA00E53714 /* InterfaceController.m */,
+				63C4292C1F2898EA00E53714 /* ExtensionDelegate.h */,
+				63C4292D1F2898EA00E53714 /* ExtensionDelegate.m */,
+				63C4292F1F2898EA00E53714 /* NotificationController.h */,
+				63C429301F2898EA00E53714 /* NotificationController.m */,
+				63C429321F2898EA00E53714 /* Assets.xcassets */,
+				63C429341F2898EA00E53714 /* Info.plist */,
+				63C429271F2898EA00E53714 /* Supporting Files */,
+			);
+			path = "RingChartDemoWatch Extension";
+			sourceTree = "<group>";
+		};
+		63C429271F2898EA00E53714 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63C429281F2898EA00E53714 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* RingChartDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "RingChartDemo" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				63C4293F1F2898EA00E53714 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+				63C429361F2898EA00E53714 /* PBXTargetDependency */,
+			);
+			name = RingChartDemo;
+			productName = RingChartDemo;
+			productReference = 1D6058910D05DD3D006BFB54 /* RingChartDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63C429151F2898EA00E53714 /* RingChartDemoWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63C4293C1F2898EA00E53714 /* Build configuration list for PBXNativeTarget "RingChartDemoWatch" */;
+			buildPhases = (
+				63C429141F2898EA00E53714 /* Resources */,
+				63C4293B1F2898EA00E53714 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63C429251F2898EA00E53714 /* PBXTargetDependency */,
+			);
+			name = RingChartDemoWatch;
+			productName = RingChartDemoWatch;
+			productReference = 63C429161F2898EA00E53714 /* RingChartDemoWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		63C429211F2898EA00E53714 /* RingChartDemoWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63C429381F2898EA00E53714 /* Build configuration list for PBXNativeTarget "RingChartDemoWatch Extension" */;
+			buildPhases = (
+				63C4291E1F2898EA00E53714 /* Sources */,
+				63C4291F1F2898EA00E53714 /* Frameworks */,
+				63C429201F2898EA00E53714 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RingChartDemoWatch Extension";
+			productName = "RingChartDemoWatch Extension";
+			productReference = 63C429221F2898EA00E53714 /* RingChartDemoWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					63C429151F2898EA00E53714 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					63C429211F2898EA00E53714 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "RingChartDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* RingChartDemo */,
+				63C429151F2898EA00E53714 /* RingChartDemoWatch */,
+				63C429211F2898EA00E53714 /* RingChartDemoWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		63C429121F28981300E53714 /* Cordova.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cordova.framework;
+			remoteRef = 63C429111F28981300E53714 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C429141F2898EA00E53714 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C4291C1F2898EA00E53714 /* Assets.xcassets in Resources */,
+				63C4291A1F2898EA00E53714 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C429201F2898EA00E53714 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C429331F2898EA00E53714 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C429741F28B95000E53714 /* AppleWatch.m in Sources */,
+				63C429661F28B7A300E53714 /* MMWormholeCoordinatedFileTransiting.m in Sources */,
+				63C429671F28B7A300E53714 /* MMWormholeFileTransiting.m in Sources */,
+				63C429681F28B7A300E53714 /* MMWormholeSession.h in Sources */,
+				63C429691F28B7A300E53714 /* MMWormholeSession.m in Sources */,
+				63C4296A1F28B7A300E53714 /* MMWormholeSessionContextTransiting.h in Sources */,
+				63C4296B1F28B7A300E53714 /* MMWormholeSessionContextTransiting.m in Sources */,
+				63C4296C1F28B7A300E53714 /* MMWormholeSessionFileTransiting.h in Sources */,
+				63C4296D1F28B7A300E53714 /* MMWormholeSessionFileTransiting.m in Sources */,
+				63C4296E1F28B7A300E53714 /* MMWormholeSessionMessageTransiting.h in Sources */,
+				63C4296F1F28B7A300E53714 /* MMWormholeSessionMessageTransiting.m in Sources */,
+				63C429701F28B7A300E53714 /* MMWormholeTransiting.h in Sources */,
+				63C429711F28B7A300E53714 /* MMWormholeCoordinatedFileTransiting.h in Sources */,
+				63C429721F28B7A300E53714 /* MMWormholeFileTransiting.h in Sources */,
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				92653863EA40463E96BDACE5 /* Screenshot.m in Sources */,
+				99E83AA6A5EC4FE2A8FE15BF /* MMWormhole.m in Sources */,
+				F148B92FB93A4E568D1D86F2 /* CDVLogger.m in Sources */,
+				854069FD0573457A983F16B0 /* CDVStatusBar.m in Sources */,
+				C66973D7D9C045D790CB1575 /* IonicKeyboard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C4291E1F2898EA00E53714 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C429731F28B81600E53714 /* ExtensionDelegate.m in Sources */,
+				63C429581F28B76700E53714 /* MMWormholeCoordinatedFileTransiting.m in Sources */,
+				63C429591F28B76700E53714 /* MMWormholeFileTransiting.m in Sources */,
+				63C4295A1F28B76700E53714 /* MMWormholeSession.h in Sources */,
+				63C4295B1F28B76700E53714 /* MMWormholeSession.m in Sources */,
+				63C4295C1F28B76700E53714 /* MMWormholeSessionContextTransiting.h in Sources */,
+				63C4295D1F28B76700E53714 /* MMWormholeSessionContextTransiting.m in Sources */,
+				63C4295E1F28B76700E53714 /* MMWormholeSessionFileTransiting.h in Sources */,
+				63C4295F1F28B76700E53714 /* MMWormholeSessionFileTransiting.m in Sources */,
+				63C429601F28B76700E53714 /* MMWormholeSessionMessageTransiting.h in Sources */,
+				63C429611F28B76700E53714 /* MMWormholeSessionMessageTransiting.m in Sources */,
+				63C429621F28B76700E53714 /* MMWormholeTransiting.h in Sources */,
+				63C429631F28B76700E53714 /* MMWormholeCoordinatedFileTransiting.h in Sources */,
+				63C429641F28B76700E53714 /* MMWormholeFileTransiting.h in Sources */,
+				63C429441F289BF300E53714 /* MMWormhole.m in Sources */,
+				63C4292B1F2898EA00E53714 /* InterfaceController.m in Sources */,
+				63C429311F2898EA00E53714 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+		63C429251F2898EA00E53714 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63C429211F2898EA00E53714 /* RingChartDemoWatch Extension */;
+			targetProxy = 63C429241F2898EA00E53714 /* PBXContainerItemProxy */;
+		};
+		63C429361F2898EA00E53714 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63C429151F2898EA00E53714 /* RingChartDemoWatch */;
+			targetProxy = 63C429351F2898EA00E53714 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63C429181F2898EA00E53714 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63C429191F2898EA00E53714 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = RingChartDemo/RingChartDemo.entitlements;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RingChartDemo/RingChartDemo-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "RingChartDemo/RingChartDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ringchart.demo.dan;
+				PRODUCT_NAME = RingChartDemo;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = RingChartDemo/RingChartDemo.entitlements;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RingChartDemo/RingChartDemo-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "RingChartDemo/RingChartDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ringchart.demo.dan;
+				PRODUCT_NAME = RingChartDemo;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63C429391F2898EA00E53714 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = "RingChartDemoWatch Extension/RingChartDemoWatch Extension.entitlements";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "RingChartDemoWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ringchart.demo.dan.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		63C4293A1F2898EA00E53714 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = "RingChartDemoWatch Extension/RingChartDemoWatch Extension.entitlements";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "RingChartDemoWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ringchart.demo.dan.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		63C4293D1F2898EA00E53714 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = RingChartDemoWatch/RingChartDemoWatch.entitlements;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = RingChartDemoWatch_Extension;
+				INFOPLIST_FILE = RingChartDemoWatch/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ringchart.demo.dan.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		63C4293E1F2898EA00E53714 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = RingChartDemoWatch/RingChartDemoWatch.entitlements;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = RingChartDemoWatch_Extension;
+				INFOPLIST_FILE = RingChartDemoWatch/Info.plist;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ringchart.demo.dan.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "RingChartDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63C429381F2898EA00E53714 /* Build configuration list for PBXNativeTarget "RingChartDemoWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C429391F2898EA00E53714 /* Debug */,
+				63C4293A1F2898EA00E53714 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63C4293C1F2898EA00E53714 /* Build configuration list for PBXNativeTarget "RingChartDemoWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C4293D1F2898EA00E53714 /* Debug */,
+				63C4293E1F2898EA00E53714 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "RingChartDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

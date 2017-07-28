@@ -1,0 +1,51 @@
+<ion-view>
+  <!--ion-header-bar>
+    <h1 class="title">Login</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar-->
+
+  <ion-content class="padding no-header" style="top: 0px !important;z-index: 10 !important;" has-bouncing="false" scroll="false">
+    <div class="login-bg"></div>
+
+    <form ng-submit="doLogin()">
+      <div class="list loginDiv">
+
+        <div class="versionDiv">
+          <p align="center" style="font-size: 13px; color: #ffffff">
+            Version number: <span ng-bind="versionNum"></span>
+          </p>
+        </div>
+
+        <label class="item item-input item-calm">
+          <span class="input-label">Username</span>
+          <input type="text" ng-model="logon.userid">
+        </label>
+        <label class="item item-input item-calm">
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="logon.password">
+        </label>
+
+        <label class="item item-input item-calm" style="padding: 0px !important; background-color: #BFBFBF !important;">
+          <ion-checkbox ng-model="logon.acceptTC" ng-click="acceptTCClicked(logon.acceptTC)"
+                        ng-class="logon.acceptTC?'checkbox-dark tcCheck':'checkbox-calm tcCheck'">I ACCEPT
+            PULSE TERMS & CONDITIONS
+          </ion-checkbox>
+        </label>
+
+        <div class="termsDiv">
+          <a style="text-align: center; font-size: 13px; color: #ffffff" href="#/terms" >
+            View PULSE Terms & Conditions
+          </a>
+        </div>
+
+        <button class="button button-block button-positive mainButtonFont" type="submit">Login</button>
+
+      </div>
+
+
+
+    </form>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,63 @@
+<ion-view cache-view="false" >
+  <ion-nav-bar class="bar-dark">
+  </ion-nav-bar>
+
+  <ion-nav-title>
+    <img src="img/pulse_header.png" width="200px" />
+  </ion-nav-title>
+
+  <ion-nav-buttons side="left" style="vertical-align: middle">
+      <a ng-model="annotationButt" data-tool="marker" ng-click="annotationClicked()" ng-class="annotationButt.clicked?'annotationActive':'annotationStatic'"></a>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <a href="#/login">
+      <img src="img/Exit-Static.png" style="width:27px;vertical-align: middle">
+    </a>
+  </ion-nav-buttons>
+
+  <ion-content class="main-bg has-header" scroll="false" >
+
+    <canvas id="sketchHome" width="420" height="800" style="display:none; position:absolute; top:0px; left:0px; z-index: 100"></canvas>
+
+    <div class="row row-center" style="padding: 0 !important">
+      <div class="col-50 col-center homeChartGrid">
+        <p class="homeChartTitle">Customer Experience</p>
+        <div id="cexpChart" class="homeChartCell"></div>
+        <button class="cexpButton" ng-click="cexpClicked()"></button>
+      </div>
+      <div class="col-50 col-center homeChartGrid">
+        <p class="homeChartTitle">Team Engagement</p>
+        <div id="teamChart" class="homeChartCell">test</div>
+        <button class="teamButton" ng-click="teamClicked()"></button>
+      </div>
+    </div>
+
+    <div class="row row-center" style="padding: 0 !important">
+      <div class="col-50 col-center homeChartGrid">
+        <p class="homeChartTitle">On Time Performance</p>
+        <div id="onTimePerfChart" class="homeChartCell"></div>
+        <button class="ontimeButton" ng-click="ontimeClicked()"></button>
+      </div>
+      <div class="col-50 col-center homeChartGrid">
+        <p class="homeChartTitle">Safety & Compliance</p>
+        <div id="safetyChart" class="homeChartCell"></div>
+        <button class="safetyButton" ng-click="safetyClicked()"></button>
+      </div>
+    </div>
+
+    <div class="row row-center" style="padding: 0 !important">
+      <div class="col-50 col-center homeChartGrid">
+        <p class="homeChartTitle">Incident & Faults</p>
+        <div id="incidentChart" class="homeChartCell"></div>
+        <button class="incidentButton" ng-click="incidentClicked()"></button>
+      </div>
+      <div class="col-50 col-center homeChartGrid">
+        <p class="homeChartTitle">Workforce Activity</p>
+        <div id="activityChart" class="homeChartCell"></div>
+        <button class="activityButton" ng-click="activityClicked()"></button>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,53 @@
+<ion-view cache-view="false">
+    <ion-nav-bar class="bar-dark">
+    </ion-nav-bar>
+
+    <ion-nav-title>
+        <img src="img/pulse_header.png" width="200px"/>
+    </ion-nav-title>
+
+    <ion-nav-buttons side="left" style="vertical-align: middle">
+        <a ng-model="annotationButt" data-tool="marker" ng-click="annotationClicked()"
+           ng-class="annotationButt.clicked?'annotationActive':'annotationStatic'"></a>
+    </ion-nav-buttons>
+
+    <ion-nav-buttons side="right">
+        <a href="#/login">
+            <img src="img/Exit-Static.png" style="width:27px;vertical-align: middle">
+        </a>
+    </ion-nav-buttons>
+
+    <ion-content scroll="false">
+
+        <!--<canvas id="sketchHome" width="420" height="800" style="display:none; position:absolute; top:0px; left:0px; z-index: 100"></canvas>-->
+        <div>
+            <p>ddddd</p>
+        </div>
+
+        <div>
+            <button ng-click="onTestAlert()">Test Alert!</button>
+        </div>
+
+        <div>
+            <button ng-click="onInitWatch()">Init Watch!</button>
+        </div>
+
+        <div>
+            <button ng-click="onSendNotification()">Send notification!</button>
+        </div>
+
+        <div>
+            <button ng-click="sendMessage()">Send message!</button>
+        </div>
+        
+        <div>
+            <button ng-click="regListener()">Add listener</button>
+        </div>
+
+
+
+
+
+
+    </ion-content>
+</ion-view>

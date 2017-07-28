@@ -1,0 +1,110 @@
+<ion-view cache-view="false">
+  <ion-nav-bar class="bar-dark">
+  </ion-nav-bar>
+
+  <ion-nav-title>
+    <img src="img/pulse_header.png" width="200px"/>
+  </ion-nav-title>
+
+  <ion-nav-buttons side="left" style="vertical-align: middle">
+    <a ng-model="annotationButt" data-tool="marker" ng-click="annotationClicked()"
+       ng-class="annotationButt.clicked?'annotationActive':'annotationStatic'"></a>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <a href="#/watch">
+      <img src="img/Exit-Static.png" style="width:27px;vertical-align: middle">
+    </a>
+  </ion-nav-buttons>
+
+  <ion-content class="main-bg has-header" scroll="false">
+
+    <!--<canvas id="sketchHome" width="420" height="800" style="display:none; position:absolute; top:0px; left:0px; z-index: 100"></canvas>-->
+    <ul class="homeSlider">
+      <li>
+        <div class="row row-center" style="padding: 0 !important">
+          <div class="col-50 col-center homeChartGrid">
+            <p class="homeChartTitle">Runway Inspections</p>
+            <div id="rwi" class="homeChartCell"></div>
+            <!--<button class="cexpButton"></button>-->
+          </div>
+          <div class="col-50 col-center homeChartGrid">
+            <p class="homeChartTitle">Taxiway Inspections</p>
+            <div id="txi" class="homeChartCell">test</div>
+            <!--<button class="teamButton" ng-click="teamClicked()"></button>-->
+          </div>
+        </div>
+
+        <div class="row row-center" style="padding: 0 !important">
+          <div class="col-50 col-center homeChartGrid">
+            <p class="homeChartTitle">Apron Inspections</p>
+            <div id="apr" class="homeChartCell"></div>
+            <!--<button class="ontimeButton" ng-click="ontimeClicked()"></button>-->
+          </div>
+          <div class="col-50 col-center homeChartGrid">
+            <p class="homeChartTitle">Bay Inspections</p>
+            <div id="bay" class="homeChartCell"></div>
+            <button class="safetyButton" ng-click="safetyClicked()"></button>
+          </div>
+        </div>
+
+        <div class="row row-center" style="padding: 0 !important">
+          <div class="col-50 col-center homeChartGrid">
+            <p class="homeChartTitle">Wildlife Activities</p>
+            <div id="wa" class="homeChartCell"></div>
+            <button class="incidentButton" ng-click="incidentClicked()"></button>
+          </div>
+          <div class="col-50 col-center homeChartGrid">
+            <p class="homeChartTitle">Driver Behaviour</p>
+            <div id="db" class="homeChartCell"></div>
+            <button class="activityButton" ng-click="activityClicked()"></button>
+          </div>
+        </div>
+      </li>
+      <li>
+
+        <div class="row row-center" style="padding: 0 !important">
+          <div class="col-50 col-center homeChartGrid">
+            <p class="homeChartTitle">Shfit Handover</p>
+            <div id="sh" class="homeChartCell"></div>
+            <button class="cexpButton" ng-click="cexpClicked()"></button>
+          </div>
+          <div class="col-50 col-center homeChartGrid">
+            <p class="homeChartTitle">Serviceability</p>
+            <div id="sa" class="homeChartCell">test</div>
+            <button class="teamButton" ng-click="teamClicked()"></button>
+          </div>
+        </div>
+
+        <div class="row row-center" style="padding: 0 !important">
+          <div class="col-50 col-center homeChartGrid">
+            <p class="homeChartTitle">Current Activities</p>
+            <div id="ca" class="homeChartCell"></div>
+            <button class="cexpButton" ng-click="cexpClicked()"></button>
+          </div>
+          <div class="col-50 col-center homeChartGrid">
+            <p class="homeChartTitle">WTD Activities</p>
+            <div id="wtd" class="homeChartCell">test</div>
+            <button class="teamButton" ng-click="teamClicked()"></button>
+          </div>
+        </div>
+
+        <div class="row row-center" style="padding: 0 !important">
+          <div class="col-50 col-center homeChartGrid">
+            <p class="homeChartTitle">MTD Activities</p>
+            <div id="mtd" class="homeChartCell"></div>
+            <button class="cexpButton" ng-click="cexpClicked()"></button>
+          </div>
+          <div class="col-50 col-center homeChartGrid">
+            <p class="homeChartTitle">QTD Activities</p>
+            <div id="qtd" class="homeChartCell">test</div>
+            <button class="teamButton" ng-click="teamClicked()"></button>
+          </div>
+        </div>
+
+      </li>
+    </ul>
+
+
+  </ion-content>
+</ion-view>

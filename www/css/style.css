@@ -1,0 +1,287 @@
+/* Empty. Add your own CSS if you like */
+
+.navbarTitleFont {
+  font-size: 18px;
+  display: block;
+  font-weight: bold !important;
+  color: #FFFFFF !important;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.cexpLogo {
+  height: 100%;
+  width: 100%;
+  float: left;
+}
+
+.taglineLogo {
+  height: 100%;
+  width: 96%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.logo {
+  height: 80%;
+  width: 80%;
+  float: right;
+}
+
+.main-bg {
+  /*background-image: url(../img/01_AA-TrackerCExP-02Cycle_background.png);*/
+  background-color: #000;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.login-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/02_AA-Pulse-iPhone6_Home-background.png);
+  background-color: #000;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10 !important;
+}
+
+.bar-header {
+  border-bottom: 1px solid #086E08 !important;
+}
+
+.homeChartTitle {
+  font-size: 16px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0px;
+  text-align: center;
+
+}
+
+.cexpChartTitle {
+  font-size: 16px;
+  font-weight: 800;
+  color: white;
+  margin-top:10px;
+  margin-bottom: 0px;
+  text-align: center;
+
+}
+
+.homeChartCell {
+  display: inline-block;
+  /*
+  height: 180px;
+  width: 180px;
+  */
+  width: 100%;
+  padding: 0px !important;
+  /*border: none;*/
+}
+
+.cexpChartCell {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  padding: 0px !important;
+  /*border: none;*/
+}
+
+.activityChartCell {
+
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  padding: 0px !important;
+  /*border: none;*/
+
+}
+
+.homeChartGrid {
+  text-align: center;
+  /*border: 1px #424242 solid;padding: 0 !important*/
+}
+
+.offsetx5 {
+  transform:translateX(5px);
+}
+
+.cexpChartGrid {
+  width: 100%;
+  text-align: center;
+  /*border: 1px #424242 solid;padding: 0 !important*/
+}
+
+.versionDiv {
+  z-index: 15;
+  margin-top: -15px;
+}
+
+.termsDiv {
+  z-index: 15;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.loginDiv {
+  z-index: 15;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 280px;
+
+}
+
+.mainButtonFont {
+  color: #000000 !important;
+  font-weight: 800;
+  font-size: 22px
+}
+
+.tcCheck {
+  background-color: #BFBFBF;
+  font-color: black;
+  border: none;
+  font-size: 12px;
+  font-weight: 600
+}
+
+.cexpButton {
+
+  background: transparent;
+  position: absolute;
+  border-Radius: 50%;
+  z-index: 10;
+  border: none;
+
+}
+
+.teamButton {
+
+  background: transparent;
+  position: absolute;
+  border-Radius: 50%;
+  z-index: 10;
+  border: none;
+
+}
+
+.ontimeButton {
+
+  background: transparent;
+  position: absolute;
+  border-Radius: 50%;
+  z-index: 10;
+  border: none;
+
+}
+
+.safetyButton {
+
+  background: transparent;
+  position: absolute;
+  border-Radius: 50%;
+  z-index: 10;
+  border: none;
+
+}
+
+.incidentButton {
+
+  background: transparent;
+  position: absolute;
+  border-Radius: 50%;
+  z-index: 10;
+  border: none;
+
+}
+
+.activityButton {
+
+  background: transparent;
+  position: absolute;
+  border-Radius: 50%;
+  z-index: 10;
+  border: none;
+
+}
+
+.domesticButton {
+
+  background: transparent;
+  position: absolute;
+  border-Radius: 50%;
+  z-index: 10;
+  border: none;
+
+}
+
+.internationalButton {
+
+  background: transparent;
+  position: absolute;
+  border-Radius: 50%;
+  z-index: 10;
+  border: none;
+
+}
+
+.annotationStatic {
+  width: 2.5em;
+  height: 2.5em;
+  background-image: url(../img/Highlight-Static.png);
+  background-size: 2.5em 2.5em;
+
+}
+
+.annotationActive {
+  width: 2.5em;
+  height: 2.5em;
+  background-image: url(../img/Highlight-Active.png);
+  background-size: 2.5em 2.5em;
+
+}
+
+
+ion-view.pane:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 65px;
+  background-color: black;
+  z-index: 5;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+  .homeChartTitle {
+    font-size: 14px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 0px;
+    text-align: center;
+
+  }
+
+  .login-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/02_AA-Pulse-iPhone5_Home-background.png);
+    background-color: #000;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10 !important;
+  }
+}

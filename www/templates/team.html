@@ -1,0 +1,57 @@
+<ion-view cache-view="false" >
+  <ion-nav-bar class="bar-dark">
+  </ion-nav-bar>
+
+  <ion-nav-title>
+    TEAM ENGAGEMENT
+  </ion-nav-title>
+
+  <ion-nav-buttons side="left" style="vertical-align: middle">
+    <a ng-model="annotationButt" data-tool="marker" ng-click="annotationClicked()" ng-class="annotationButt.clicked?'annotationActive':'annotationStatic'"></a>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <a href="#/home">
+      <img src="img/Home-Static.png" style="width:27px;vertical-align: middle">
+    </a>
+  </ion-nav-buttons>
+
+  <ion-content class="main-bg has-header" scroll="false">
+
+    <canvas id="sketchTeam" width="420" height="800" style="display:none; position:absolute; top:0px; left:0px; z-index: 100"></canvas>
+
+    <div class="row row-center" style="padding: 0 !important">
+      <div class="col-50 col-center homeChartGrid">
+        <p class="homeChartTitle">AIRSIDE</p>
+        <div id="team1Chart" class="homeChartCell"></div>
+      </div>
+      <div class="col-50 col-center homeChartGrid">
+        <p class="homeChartTitle">Team 2</p>
+        <div id="team2Chart" class="homeChartCell">test</div>
+      </div>
+    </div>
+
+    <div class="row row-center" style="padding: 0 !important">
+      <div class="col-50 col-center homeChartGrid">
+        <p class="homeChartTitle">Team 3</p>
+        <div id="team3Chart" class="homeChartCell"></div>
+      </div>
+      <div class="col-50 col-center homeChartGrid">
+        <p class="homeChartTitle">Team 4</p>
+        <div id="team4Chart" class="homeChartCell"></div>
+      </div>
+    </div>
+
+    <div class="row row-center" style="padding: 0 !important">
+      <div class="col-50 col-center homeChartGrid">
+        <p class="homeChartTitle">Team 5</p>
+        <div id="team5Chart" class="homeChartCell"></div>
+      </div>
+      <div class="col-50 col-center homeChartGrid">
+        <p class="homeChartTitle">Team 6</p>
+        <div id="team6Chart" class="homeChartCell"></div>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>
