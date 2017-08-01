@@ -10,10 +10,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         $ionicPlatform.ready(function () {
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
             // for form inputs)
-
-                             applewatch.init(function successHandler (appGroupId) {
-                                             console.log('successfully initialised');
-                                             $ionicPopup.alert({
+            console.log('Hello!!');
+            applewatch.init(function successHandler (appGroupId) {
+                        console.log('successfully initialised');
+                                    $ionicPopup.alert({
                                                                title: '<span class="alertTitle" >GOOD</span>',
                                                                template: '<p class="alertBody" >Your </p>'
                                                                });
@@ -23,7 +23,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                                                                template: '<p class="alertBody" >Your user role cannot access Dashboard!</p>'
                                                                });
                                              },'group.com.ringchart.demo.dan');
-                                                          
+                             
                              
             if (window.cordova && window.cordova.plugins.Keyboard) {
                 cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);

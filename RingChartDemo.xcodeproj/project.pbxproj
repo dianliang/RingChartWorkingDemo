@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		00F5AF0769BB4DA1B41385AD /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C335893850C14431AA31EA8B /* WatchConnectivity.framework */; };
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		15717FC21F30715900F20B1C /* CDVLogger.h in Sources */ = {isa = PBXBuildFile; fileRef = FAA9D1F6D735405899AC4939 /* CDVLogger.h */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
@@ -568,6 +569,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15717FC21F30715900F20B1C /* CDVLogger.h in Sources */,
 				63C429741F28B95000E53714 /* AppleWatch.m in Sources */,
 				63C429661F28B7A300E53714 /* MMWormholeCoordinatedFileTransiting.m in Sources */,
 				63C429671F28B7A300E53714 /* MMWormholeFileTransiting.m in Sources */,
